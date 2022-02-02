@@ -4,8 +4,8 @@ export default class Circle extends Shape {
     super(name, color);
     this.radius = radius;
   }
-
-  getRadius() {
-    console.log(`Radius of circle is ${this.radius}`);
+  calculateArea() {
+    const ans = Math.PI * this.radius * this.radius;
+    console.log(`Area of circle is ${ans}`);
   }
 }

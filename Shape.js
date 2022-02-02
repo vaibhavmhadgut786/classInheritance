@@ -1,10 +1,14 @@
 export default class Shape {
-  constructor(name, color) {
+  constructor(name, radius, color) {
     this.name = name;
     this.color = color;
   }
-
-  getShapeName() {
+  drawShape() {
     console.log(`Shape is ${this.name}`);
+  }
+
+  calculateArea() {
+    const ans = Math.PI * this.radius * this.radius;
+    console.log(`Area of circle is ${ans}`);
   }
 }
